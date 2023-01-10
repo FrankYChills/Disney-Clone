@@ -56,12 +56,53 @@ const CTALogoOne = styled.img`
   display: block;
 `;
 
+const SignUp = styled.button`
+  max-width: 600px;
+  font-family: Roboto;
+  color: white;
+  background-color: #0014ff;
+  width: 100%;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  font-size: 1.5em;
+  padding: 17px 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #009eff;
+  }
+`;
+
+const Description = styled.p`
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  letter-spacing: 0.8px;
+  margin: 5px 0 24px;
+`;
+
+const CTALogoTwo = styled.img`
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+`;
 const Login = () => {
   return (
     <Container>
       <Content>
         <CTA>
           <CTALogoOne src="images/cta-logo-one.svg" />
+          <SignUp>GET ALL THERE</SignUp>
+          <Description>
+            Disney+ Hotstar currently offers over 100,000 hours of TV content
+            and movies across 9 languages, and every major sport covered live.
+            Highly evolved video streaming technology and a high attention to
+            quality of experience across devices and platforms, make Disney+
+            Hotstar the most complete video destination for Over The Top (OTT)
+            video consumers.
+          </Description>
+          <CTALogoTwo src="images/cta-logo-two.svg" />
         </CTA>
         <BgImage />
       </Content>
